@@ -1,6 +1,13 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+
+  errorMessage:{
+    fontSize:12,
+    color:"red",
+    fontWeight:"bold",
+    paddingLeft:20,
+  },
   formContext: {
     width: "100%",
     height: "100%",
@@ -26,7 +33,7 @@ const styles = StyleSheet.create({
     width: "90%",
     borderRadius: 50,
     backgroundColor: "#f6f6f6",
-    height: 40,
+    height: 50,
     margin: 12,
     paddingLeft: 10,
   },
