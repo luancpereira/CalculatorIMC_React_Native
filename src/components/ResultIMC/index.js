@@ -9,7 +9,7 @@ export default function ResultIMC({ resultImc, messageResultImc }) {
   };
 
   return (
-    <View style={styles.resultImc}>
+    <View style={styles.contextImc}>
       <View style={styles.boxShareButton}>
         {resultImc != null ? (
           <TouchableOpacity onPress={onShare} style={styles.shared}>
@@ -20,7 +20,7 @@ export default function ResultIMC({ resultImc, messageResultImc }) {
         )}
       </View>
       <Text style={styles.information}>{messageResultImc}</Text>
-      <Text style={styles.numberImc}>{resultImc}</Text>
+      <Text style={styles.resultImc}>{resultImc}</Text>
     </View>
   );
 }
