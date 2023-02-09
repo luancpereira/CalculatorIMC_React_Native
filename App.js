@@ -5,7 +5,7 @@ import Title from "./src/components/Title";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Title title="Ta Gordão ou Não?" />
+      <Title title="ONEBITHEALTH" />
       <Main />
     </View>
   );

@@ -9,7 +9,7 @@ import {
   Keyboard,
   FlatList,
 } from "react-native";
-import ResultIMC from "../ResultIMC";
+import ResultIMC from "./ResultIMC";
 import styles from "./style";
 
 export default function Form() {
@@ -27,6 +27,7 @@ export default function Form() {
     let totalImc = (weightFormat / (heightFormat * heightFormat)).toFixed(2);
     setImcList((arr) => [...arr, { id: new Date().getTime(), imc: totalImc }]);
     setImc(totalImc);
+    console.log(imcList);
   }
 
   function verificationImc() {
@@ -97,6 +98,7 @@ export default function Form() {
         </View>
       )}
       <FlatList
+        showsVerticalScrollIndicator={false}
         style={styles.listImcs}
         data={imcList.reverse()}
         renderItem={({ item }) => {
